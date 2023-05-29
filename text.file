@@ -1,1 +1,16 @@
 text
+DOCKER
+Mkdir /opt/docker_files
+Mount /dev/sr1/ /opt/docker_files
+
+Cp /opt/docker_files/d* /opt/docker_files/ip* /opt/docker_files/con* /files/
+Cp /opt/docker_Files/appdocker0.zip/ /opt/Readme.txt/ /opt/
+
+Apt install /files/*
+
+Docker ps 
+Docker -v
+Docker load < /opt/appdocker0.zip
+docker images
+docker run –name appdocker -p 8080:80 -d appdocker
+docker ps
